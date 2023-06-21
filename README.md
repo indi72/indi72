@@ -1,22 +1,27 @@
 Ext News Partner
 
+&nbsp;
+
 **Installieren**
 
 \typo3conf\ext\news_partner\
 
+&nbsp;
 
-**Dateien**
+**News Dateien**
 
 \typo3conf\ext\theme\Resources\Private\ext\news\Partials\List\Partner.html
 
+&nbsp;
 
 **Anpassen**
 
 auskommentieren in YouTubeRenderer.php
+
 I:\Projekte\Rooom\typo3-dev\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php
 
 ```
-public function render
+public function render ( ... ) { ... }
 ```
 
 Code in jquery-ias.js einfügen

@@ -24,6 +24,22 @@ Ext News Partner
 
 **Anpassen**
 
+_Partner pageTsConfig.ts hinzufügen_
+
+\typo3conf\ext\theme\Configuration\TypoScript\pageTsConfig.ts
+
+```
+tx_news.templateLayouts {
+         20 = Liste
+         30 = Kacheln
+         40 = Kacheln neu
+         50 = HeaderSlider
+         60 = Partner
+}
+```
+
+&nbsp;
+
 _Auskommentieren in YouTubeRenderer.php und VimeoRenderer.php_
 
 \typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php

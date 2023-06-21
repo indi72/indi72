@@ -1,4 +1,4 @@
-Ext News Partner
+**Ext News Partner**
 
 &nbsp;
 

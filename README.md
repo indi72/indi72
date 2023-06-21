@@ -24,7 +24,7 @@ Ext News Partner
 
 **Anpassen**
 
-Auskommentieren in YouTubeRenderer.php und VimeoRenderer.php
+_Auskommentieren in YouTubeRenderer.php und VimeoRenderer.php_
 
 \typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php
 
@@ -36,7 +36,8 @@ public function render ( ... ) { ... }
 
 &nbsp;
 
-Code in jquery-ias.js einfügen
+_Code in jquery-ias.js einfügen_
+
 \typo3conf\ext\infinitescrolling\Resources\Public\JavaScript\Ias\jquery-ias.js
 
 ```

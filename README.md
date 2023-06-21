@@ -24,9 +24,11 @@ Ext News Partner
 
 **Anpassen**
 
-auskommentieren in YouTubeRenderer.php
+Auskommentieren in YouTubeRenderer.php und VimeoRenderer.php
 
-I:\Projekte\Rooom\typo3-dev\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php
+\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php
+
+\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\VimeoRenderer.php
 
 ```
 public function render ( ... ) { ... }

@@ -8,9 +8,13 @@ Ext News Partner
 
 &nbsp;
 
-**News Dateien**
+**Dateien**
 
 \typo3conf\ext\theme\Resources\Private\ext\news\Partials\List\Partner.html
+\typo3conf\ext\theme\Resources\Private\ext\news\Templates\NewsList.html
+\typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\Detail.html
+\typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\SearchResult.html
+\typo3conf\ext\theme\Resources\Public\js\newsPartner.js
 
 &nbsp;
 
@@ -23,6 +27,8 @@ I:\Projekte\Rooom\typo3-dev\typo3conf\ext\we_cookie_consent\Classes\Resource\Ren
 ```
 public function render ( ... ) { ... }
 ```
+
+&nbsp;
 
 Code in jquery-ias.js einfügen
 \typo3conf\ext\infinitescrolling\Resources\Public\JavaScript\Ias\jquery-ias.js

@@ -11,9 +11,13 @@ Ext News Partner
 **Dateien**
 
 \typo3conf\ext\theme\Resources\Private\ext\news\Partials\List\Partner.html
+
 \typo3conf\ext\theme\Resources\Private\ext\news\Templates\NewsList.html
+
 \typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\Detail.html
+
 \typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\SearchResult.html
+
 \typo3conf\ext\theme\Resources\Public\js\newsPartner.js
 
 &nbsp;

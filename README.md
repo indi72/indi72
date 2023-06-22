@@ -54,38 +54,59 @@ public function render ( ... ) { ... }
 
 &nbsp;
 
-_Code in jquery-ias.js einfügen_
+_Code in jquery-ias.js ersetzen_
 
 /typo3conf/ext/infinitescrolling/Resources/Public/JavaScript/Ias/jquery-ias.js
 
 ```
-// Funktion zum Laden der JavaScript-Datei, Warten und Einblenden des Inhalts
-function loadCustomJSAndShow() {
-    $(items).hide(); // zunächst ausblenden, um es später einzublenden
-    // Laden der JavaScript-Datei
-    var script = document.createElement('script');
-    script.src = '/typo3conf/ext/theme/Resources/Public/js/newsPartner.js';
-    script.onload = function() {
-        console.log("newsPartner.js geladen");
-        
-        // Einblenden des Inhalts mit Animation
-        $(items).fadeIn(400, function() {
-            // Anzeigen des Inhalts
-            $(items).css('display', 'block');
+promise.done(function () {
+    $(items).hide(); // at first, hide it so we can fade it in later
+    $lastItem.after(items);
+    $(items).fadeIn(400, function () {
+        // complete callback get fired for each item,
+        // only act on the last item
+        if (++count < items.length) {
+            return;
+        }
+        self.fire('rendered', [items]);
+        if (callback) {
+            callback();
+        }
+    });
+});
 
-            // complete callback get fired for each item,
-            // only act on the last item
-            if (++count < items.length) {
-                return;
-            }
+```
+mit diesem code ersetzen
 
-            self.fire('rendered', [items]);
+```
+promise.done(function () {
+    $lastItem.after(items);
+    // Funktion zum Laden der JavaScript-Datei, Warten und Einblenden des Inhalts
+    function loadCustomJSAndShow() {
+        $(items).hide(); // zunächst ausblenden, um es später einzublenden
+        // Laden der JavaScript-Datei
+        var script = document.createElement('script');
+        script.src = '/typo3conf/ext/theme/Resources/Public/js/newsPartner.js';
+        script.onload = function () {
+            console.log("newsPartner.js geladen");
+            // Einblenden des Inhalts mit Animation
+            $(items).fadeIn(400, function () {
+                // Anzeigen des Inhalts
+                $(items).css('display', 'block');
+                // complete callback get fired for each item,
+                // only act on the last item
+                if (++count < items.length) {
+                    return;
+                }
+                self.fire('rendered', [items]);
+                if (callback) {
+                    callback();
+                }
+            });
+        };
+        document.head.appendChild(script);
+    }
+    loadCustomJSAndShow(); // JavaScript-Datei laden, warten und Inhalte einblenden
+});
 
-            if (callback) {
-                callback();
-            }
-        });
-    };
-    document.head.appendChild(script);
-}
 ```

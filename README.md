@@ -4,21 +4,23 @@
 
 **Installieren**
 
-\typo3conf\ext\news_partner\
+/typo3conf/ext/news_partner/
 
 &nbsp;
 
 **Dateien**
 
-\typo3conf\ext\theme\Resources\Private\ext\news\Partials\List\Partner.html
+/typo3conf/ext/theme/Resources/Private/ext/news/Partials/List/Partner.html
 
-\typo3conf\ext\theme\Resources\Private\ext\news\Templates\NewsList.html
+/typo3conf/ext/theme/Resources/Private/ext/news/Templates/NewsList.html
 
-\typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\Detail.html
+/typo3conf/ext/theme/Resources/Private/ext/news/Templates/News/Detail.html
 
-\typo3conf\ext\theme\Resources\Private\ext\news\Templates\News\SearchResult.html
+/typo3conf/ext/theme/Resources/Private/ext/news/Templates/News/SearchResult.html
 
-\typo3conf\ext\theme\Resources\Public\js\newsPartner.js
+/typo3conf/ext/theme/Resources/Private/ext/news/Templates/Category/List.html
+
+/typo3conf/ext/theme/Resources/Public/js/newsPartner.js
 
 &nbsp;
 
@@ -26,7 +28,7 @@
 
 _Partner pageTsConfig.ts hinzufügen_
 
-\typo3conf\ext\theme\Configuration\TypoScript\pageTsConfig.ts
+/typo3conf/ext/theme/Configuration/TypoScript/pageTsConfig.ts
 
 ```
 tx_news.templateLayouts {
@@ -42,9 +44,9 @@ tx_news.templateLayouts {
 
 _Auskommentieren in YouTubeRenderer.php und VimeoRenderer.php_
 
-\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\YouTubeRenderer.php
+/typo3conf/ext/we_cookie_consent/Classes/Resource/Rendering/YouTubeRenderer.php
 
-\typo3conf\ext\we_cookie_consent\Classes\Resource\Rendering\VimeoRenderer.php
+/typo3conf/ext/we_cookie_consent/Classes/Resource/Rendering/VimeoRenderer.php
 
 ```
 public function render ( ... ) { ... }
@@ -54,7 +56,7 @@ public function render ( ... ) { ... }
 
 _Code in jquery-ias.js einfügen_
 
-\typo3conf\ext\infinitescrolling\Resources\Public\JavaScript\Ias\jquery-ias.js
+/typo3conf/ext/infinitescrolling/Resources/Public/JavaScript/Ias/jquery-ias.js
 
 ```
 // Funktion zum Laden der JavaScript-Datei, Warten und Einblenden des Inhalts

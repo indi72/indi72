@@ -12,7 +12,7 @@
 
 /typo3conf/ext/theme/Resources/Private/ext/news/Partials/List/Partner.html
 
-/typo3conf/ext/theme/Resources/Private/ext/news/Templates/NewsList.html
+/typo3conf/ext/theme/Resources/Private/ext/news/Templates/News/List.html
 
 /typo3conf/ext/theme/Resources/Private/ext/news/Templates/News/Detail.html
 

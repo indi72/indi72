@@ -26,6 +26,12 @@
 
 **Anpassen**
 
+_update plyr.js_
+
+/typo3conf/ext/theme/Resources/Public/js/plyr.js
+
+&nbsp;
+
 _Partner pageTsConfig.ts hinzufügen_
 
 /typo3conf/ext/theme/Configuration/TypoScript/pageTsConfig.ts
